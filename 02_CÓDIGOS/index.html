@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gaúchos Burguer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet" >
+    
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" >
+    <link rel="stylesheet" href="css/owl.theme.css" >
+    <link rel="stylesheet" href="css/owl.transitions.css" >
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="css/color/green.css">
+    
+    
+    
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="css/color/green.css" title="green">
+    <link rel="stylesheet" type="text/css" href="css/color/light-red.css" title="light-red">
+    <link rel="stylesheet" type="text/css" href="css/color/blue.css" title="blue">
+    <link rel="stylesheet" type="text/css" href="css/color/light-blue.css" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="css/color/yellow.css" title="yellow">
+    <link rel="stylesheet" type="text/css" href="css/color/light-green.css" title="light-green">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Modernizer js -->
+    <script src="js/modernizr.custom.js"></script>
+
+	<script>
+		function fonte(e){
+			var elemento=document.getElementById("conteudo");
+			var atual=elemento.style.fontSize;
+			back = parseInt(atual);
+			document.getElementById("backup").value=back;
+			if(e == 'a'){
+				atual = parseInt(atual)+2+'px';
+			}else if(e == 'b'){
+				atual = parseInt(atual)-2+'px';
+			}else if(e == 'c'){
+				atual = parseInt(atual)+2+'px';
+			}
+				elemento.style.fontSize=atual;
+		}
+	</script>
+    
+
+</head>
+
+<body class="index">
+
+    <!-- Styleswitcher
+================================================== -->
+	<div class="colors-switcher">
+		<a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>        
+			<ul class="colors-list">
+				<li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
+				<li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>
+				<li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>
+				<li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>
+				
+				<li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
+				<li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>
+				<li><a title="light-green" onClick="setActiveStyleSheet('light-green'); return false;">Contraste</a></li>
+
+			</ul>
+
+	</div>  
+<!-- Styleswitcher End
+================================================== -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Gaúchos <br> Burguer</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#feature">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Hambúrgueres</a> <!--FOTOS dos burguers-->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#pricing">Preços</a> <!--preços -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#service">Cardápio</a> <!--acompanhamentos-->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#latest-news">Cadastro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#testimonial">Mapa do Site</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#testimonial2">Localização</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a> <!--FOTOS dos burguers-->
+                    </li>
+					<li>
+						<input type="button" class="btn btn-primary" value="+" onclick="fonte('a');"/>
+                    </li>
+					<li>
+						<input type="button" class="btn btn-primary" value="-" onclick="fonte('b');"/>
+                    </li>
+	
+	
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav> 
+    
+    <!-- Start Home Page Slider -->
+    <section id="page-top">
+        <!-- Carousel -->
+        <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slide" data-slide-to="1"></li>
+                <li data-target="#main-slide" data-slide-to="2"></li>
+            </ol>
+            <!--/ Indicators end-->
+
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <img class="img-responsive" src="images/painel.png" alt="slider">  
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h1 class="animated1">
+								<span><strong>Tá com fome?</strong></span>
+                    	    </h1>
+                            <p class="animated2">Vem pro <strong>Gaúchos</strong> Burguer</p>
+						    <p class="animated2"><span>Sabor Incomparável </span></p>
+
+							<a href="#feature" class="page-scroll btn btn-primary animated3"><strong>Vai resistir ?</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img class="img-responsive" src="images/reacao.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h1 class="animated3">
+                    		  <span><strong>Gaúchos</strong> Burguer</span>
+                            </h1>
+                            <p class="animated2">Hamburgueria Artesanal</p>
+							<a href="#feature" class="page-scroll btn btn-primary animated3"><strong>Vai resistir ?</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Carousel item end -->
+            </div>
+            <!-- Carousel inner end-->
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                <span><i class="fa fa-angle-left"></i></span>
+            </a>
+            <a class="right carousel-control" href="#main-slide" data-slide="next">
+                <span><i class="fa fa-angle-right"></i></span>
+            </a>
+        </div>
+        <!-- /carousel -->
+    </section>
+    <!-- End Home Page Slider -->
+    
+    <!-- Start Feature Section -->
+	<section id="feature" class="feature-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="feature">
+						<i class="fa fa-magic"></i>
+						<div class="feature-content">
+							<h4><strong title="oi">Boteco dos Gaúchos</strong></h4>
+							<p>O Gaúchos preparou uma pegada diferente, teremos nossos engasga gato, chopp e ceva bem gelados, pra acompanhar um som de primeira. Cada semana temos um artista Alegretense.</p>
+						</div>
+					</div>
+				</div><!-- /.col-md-3 -->
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="feature">
+						<i class="fa fa-gift"></i>
+						<div class="feature-content">
+							<h4><strong>Combos</strong></h4>
+							<p>Cada dia da semana temos um combo diferente. Terça é dia de 2 Devassas por 12 pila. Quarta 2 chopes por 15 pila. Quinta pede um solito e leva dois burguers por 15 pila.</p>
+						</div>
+					</div>
+				</div><!-- /.col-md-3 -->
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="feature">
+						<i class="fa fa-joomla"></i>
+						<div class="feature-content">
+							<h4><strong>Sobremesas</strong></h4>
+							<p>Como a Gauchada aprovou, agora a #tortinhadogauchos, que é feitio da casa, agora faz parte do cardápio.</p>
+						</div>
+					</div>
+				</div><!-- /.col-md-3 -->
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="feature">
+						<i class="fa fa-plug"></i>
+						<div class="feature-content">
+							<h4><strong>Wifi disponível</strong></h4>
+							<p>Ambiente com Wifi livre pra postar e te exibir que esta comendo o hamburguer mais bagual da cidade</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.row -->
+		
+		</div><!-- /.container -->
+	</section>
+        <!-- End Feature Section -->  
+    
+    <!-- Start Call to Action Section -->
+    <section class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+					<input type="hidden" id="backup"/>
+					<h4>Venha para o Gaúchos Burguer</h4>
+					<div id="conteudo" style="font-size:22px;">
+						Estabelecimento idealizado e criado no feitio da nossa terra, hambúrgueres artesanais com alma gaúcha, suculentos e com variedade pra todos os gostos.
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call to Action Section -->
+
+    <!-- Start Portfolio Section -->
+	<section id="portfolio" class="portfolio-section-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h3>Nossos Hambúrgueres</h3>
+						<p>Algumas das opções que tu vai encontrar no Gaúchos Burguer.</p>
+					</div>                        
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Start Portfolio items -->
+					<ul id="portfolio-list">
+						<li>
+							<div class="portfolio-item">
+								<img src="images/portfolio/img1.jpg" class="img-responsive" alt="hambúrguer castija" />
+								<div class="portfolio-caption">
+									<h4>Hambúrguer Castija</h4>
+									<a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="portfolio-item">
+								<img src="images/portfolio/img3.jpg" class="img-responsive" alt="hambúrguer balaqueiro" />
+								<div class="portfolio-caption">
+									<h4>Hambúrguer Balaqueiro</h4>
+									<a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="portfolio-item">
+								<img src="images/portfolio/img2.jpg" class="img-responsive" alt="hambúrguer buenacho" />
+								<div class="portfolio-caption">
+									<h4>Hambúrguer Buenacho</h4>
+									<a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="portfolio-item">
+								<img src="images/portfolio/img4.jpg" class="img-responsive" alt="jambúrguer arregado" />
+								<div class="portfolio-caption">
+									<h4>Hambúrguer Arregado</h4>
+									<a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="portfolio-item">
+								<img src="images/portfolio/img5.jpg" class="img-responsive" alt="hambúrguer bagualito" />
+								<div class="portfolio-caption">
+									<h4>Hambúrguer Bagualito</h4>
+									<a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="portfolio-item">
+								<img src="images/portfolio/img6.jpg" class="img-responsive" alt="hambúrguer solito" />
+								<div class="portfolio-caption">
+									<h4>Hambúrguer Solito</h4>
+									<a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- End Portfolio items -->
+				</div>
+			</div>
+		</div>
+	</section>
+        <!-- End Portfolio Section -->
+		
+	 <!-- Start Pricing Table Section -->
+    <div id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h3>Nossos Preços</h3>
+                            <p class="white-text">Preços dos hambúrgueres carros chefes do Gaúchos Burguer !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="row">  
+                <div class="pricing">   
+                    <div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>Piazito</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">R$12<span>.00</span></div>
+								<div class="interval">Combo: R$15.00</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Pão</li>
+									<li>Molho Especial</li>
+									<li>Hambúrguer</li>
+									<li>Queijo Muçarela</li>
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+                        
+					<div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>Bagualito</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">R$15<span>.00</span></div>
+								<div class="interval">Combo: R$18.00</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Pão</li>
+									<li>Molho Especial</li>
+									<li>Alface</li>
+									<li>Hambúrguer</li>
+									<li>Queijo Muçarela</li>
+									<li>Tomate e cebola no shoyo</li>
+
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>Afrescalhado</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">R$15<span>.00</span></div>
+								<div class="interval">Combo: R$18.00</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Pão</li>
+									<li>Hambúrguer</li>
+									<li>Queijo Cheddar</li>
+									<li>Tomate e cebola no shoyo</li>
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+                        
+					<div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>Balaqueiro</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">R$18<span>.00</span></div>
+								<div class="interval">Combo: R$21.00</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Pão</li>
+									<li>Molho Especial</li>
+									<li>Rúcula</li>
+									<li>Hambúrguer de frango</li>
+									<li>Queijo Cheddar</li>
+									<li>Cebola caramelada</li>
+									<li>Tempero verde e pimentão</li>
+
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>Tchê Bagual</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">R$19<span>.00</span></div>
+								<div class="interval">Combo: R$22.00</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Pão</li>
+									<li>Molho Especial</li>
+									<li>Alface</li>
+									<li>Hambúrguer </li>
+									<li>Queijo Muçarela</li>
+									<li>Cebola no shoyo</li>
+									<li>Picles e bacon</li>
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+                        
+					<div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>Gauchão</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">R$22<span>.00</span></div>
+								<div class="interval">Combo: R$25.00</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Pão</li>
+									<li>Molho Especial</li>
+									<li>Alface</li>
+									<li>2 Hambúrgueres</li>
+									<li>Queijo Muçarela</li>
+									<li>Cebola no shoyo</li>
+									<li>Picles e bacon</li>
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+						
+					<div class="col-md-12">
+						<div class="pricing-table">
+							<div class="plan-name">
+								<h3>De apartamento Vegetariano</h3>
+							</div>
+							<div class="plan-price">
+								<div class="price-value">Verificar<span></span></div>
+								<div class="interval">Combo: Verificar</div>
+							</div>
+							<div class="plan-list">
+								<ul>
+									<li>Qualquer um de nososs Hambúrgueres</li>
+									<li>A carne é substituída por proteína de soja</li>
+
+
+								</ul>
+							</div>
+							<div class="plan-signup">
+								<a href="#" class="btn-system btn-small">Pedidos pelo Whats 999359214</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- End Pricing Table Section -->
+    
+<!-- Start Feature Section -->
+	<section id="service" class="services-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h4><strong>Cardápio</strong></h4><br><br>
+						<img src="images/portfolio/cardapio.jpg" class="img-responsive" alt="cardápio"/>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</section>
+        <!-- End Feature Section -->
+		
+   <!-- Start Latest News Section -->
+    <section id="latest-news" class="latest-news-section">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3>Cadastro de Clientes</h3><br><br>
+						<h3>Cadastre-se e receba ofertas e promoções por e-mail!</h3><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Seu Nome *" id="name" required data-validation-required-message="Entre com seu nome. Por exemplo: Isadora Ferrão">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Seu Email *" id="email" required data-validation-required-message="Entre com seu email. Por exemplo: Isadora-gf@hotmail.com">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Seu Telefone *" id="phone" required data-validation-required-message="Entre com seu telefone. Por exemplo:996632518">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+								 <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Sua senha *" id="senha" required data-validation-required-message="Digite uma senha válida">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Qual seu hambúrguer preferido? Conte-nos mais! *" id="message" required data-validation-required-message="Qual seu hamburguer preferido?"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+		</div>
+    </section>
+    <!-- End Latest News Section -->
+
+	    <!-- Start Testimonial Section -->
+    <div id="testimonial" class="portfolio-section-1">
+        <div class="container">
+			<div class="row">
+            <!-- Start Testimonials Carousel -->
+				<div id="testimonial-carousel" class="testimonials-carousel">
+					<!-- Testimonial 1 -->
+					<div class="testimonials item">
+						<div class="testimonial-content">
+							<div class="section-title text-center">
+								<div class="testimonial-author">
+									<h3>Mapa do Site</h3>
+									
+									<ul>
+										<li><h4>-> Sobre a empresa</h4></li>
+										<li><h4>-> Tipos de Hambúrgueres</h4></li>
+										<li><h4>-> Preços dos hambúrgueres</h4></li>
+										<li><h4>-> Cardápio</h4></li>
+										<li><h4>-> Cadastro</h4></li>
+										<li><h4>-> Contato</h4></li>
+									</ul>
+								</div>
+							</div>
+						 </div>
+					</div>
+				</div>
+			
+        </div>
+            <!-- End Testimonials Carousel -->
+        </div>
+		
+    </div> 
+	<!-- End Testimonial Section -->
+    
+    <!-- Start Portfolio Modal Section -->
+	<div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="section-title text-center">
+						<h3>HAMBURGUER É O QUE NÃO FALTA !</h3>
+						<p><strong>Tu já sabe que aqui no #GaúchosBurguer temos 14 variedades de Burguer a tua disposição.</strong></p>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-6">
+						<img src="images/portfolio/cardapio.jpg" class="img-responsive" alt="cardápio">
+					</div>
+					<div class="col-md-6">
+						<img src="images/portfolio/sobremesa.jpg" class="img-responsive" alt="sobremesas">
+					</div>
+					
+				</div><!-- /.row -->
+			</div>                
+		</div>
+	</div>
+        <!-- End Portfolio Modal Section -->
+
+	    <!-- Start Testimonial Section -->
+    <div id="testimonial2" class="testimonial-section">
+        <div class="container">
+            <!-- Start Testimonials Carousel -->
+            <div id="testimonial-carousel2" class="testimonials-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonials item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+							<h3>Localização do Gaúchos Burguer</h3>
+                        </div>
+						<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.71832100389!2d-55.788517584818415!3d-29.785785426254495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95aab9d8f033a9a1%3A0x9281a543f44357d4!2sGa%C3%BAchos+Burguer!5e0!3m2!1spt-BR!2sbr!4v1539491784960" width="400" height="300" style="border:0" allowfullscreen></iframe>-->				     </div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.71832100389!2d-55.788517584818415!3d-29.785785426254495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95aab9d8f033a9a1%3A0x9281a543f44357d4!2sGa%C3%BAchos+Burguer!5e0!3m2!1spt-BR!2sbr!4v1539491784960" width="600" height="450" style="border:0" allowfullscreen></iframe>
+				</div>
+            </div>
+            <!-- End Testimonials Carousel -->
+        </div>
+    </div>
+    <!-- End Testimonial Section -->
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3>Entre em contato conosco</h3><br><br>
+                    </div>
+                </div>
+            </div>
+		<div class="row">
+			<div class="col-lg-12">
+				<form name="sentMessage" id="contactForm2" novalidate>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Seu Nome *" id="name2" required data-validation-required-message="Entre com seu nome. Por exemplo: Isadora Ferrão">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Seu Email *" id="email2" required data-validation-required-message="Entre com seu email. Por exemplo: Isadora-gf@hotmail.com">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" placeholder="Seu Telefone *" id="phone2" required data-validation-required-message="Entre com seu telefone. Por exemplo:55996632518">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Sua Mensagem *" id="message2" required data-validation-required-message="Digite a sua mensagem"></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-lg-12 text-center">
+							<div id="success2"></div>
+							<button type="submit" class="btn btn-primary">Enviar mensagem</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+			
+			
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-contact-info">
+					<h4>Informações para contato</h4>
+					<ul>
+						<li><strong>E-mail :</strong> gauchosburguer@hotmail.com</li>
+						<li><strong>Telefone :</strong> 999359214</li>
+						<li><strong>Facebook:</strong> Gaúchos Burguer</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<div class="footer-contact-info">
+					<h4>Horários de atendimento</h4>
+					<ul>
+						<li><strong>Dias :</strong> Terça à Domingo</li>
+						<li><strong>Terça-quinta :</strong> 19hrs às 00hrs</li>
+						<li><strong>Sexta :</strong> 19 hrs às 01hrs</li>
+						<li><strong>Sábado :</strong> 18 hrs às 01hrs</li>
+						<li><strong>Domingo :</strong> 17:30hrs às 00hrs</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+	<footer class="style-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="footer-social text-center">
+						<ul>
+							<li><a href="https://www.facebook.com/GauchosBurguer/"><i class="fa fa-facebook"></i></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="footer-link">
+						<ul class="pull-right">
+							<li><a href="https://www.facebook.com/isadpragf">Desenvolvedora:</a>
+							</li>
+							<li><a href="https://www.facebook.com/isadpragf">Isadora Garcia Ferrão</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+    </section>
+
+    <div id="loader">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+
+    <!-- jQuery Version 2.1.1 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="asset/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.1.3.js"></script> <!-- rolagem-->
+    <script src="js/classie.js"></script>
+    <script src="js/count-to.js"></script>
+    <script src="js/jquery.appear.js"></script> <!-- jquery precos-->
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/styleswitcher.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script> <!-- validação de formulários-->
+    <script src="js/contact_me.js"></script> <!-- contatos -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

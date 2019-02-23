@@ -1,0 +1,9 @@
+Projeto de Website (Avaliação 1)
+Aluna: Isadora Ferrão - 151151387
+
+Para rodar o sistema:
+	1- pasta 02_CÓDIGOS
+	2- abra o arquivo index.html no navegador
+
+Para mais informações:
+	1- pasta 01_DOCUMENTAÇÃO
